@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/neumorphism.css">
+    <link rel="stylesheet" href="css/news-list.css">
+    <!-- Fontawesome -->
+    <link type="text/css" href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- leaflet JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="   crossorigin=""/>
+    <!-- leaflet css -->
+   
+    <title>News List</title>
+
+  </head>
+  <body>
+
+    <header class="header-global">
+        <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+            <div class="container position-relative">
+                <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="./index.html">
+                    <img class="navbar-brand-dark" src="img/brand/dark.svg" alt="Logo light">
+                    <img class="navbar-brand-light" src="img/brand/dark.svg" alt="Logo dark">
+                </a>
+                <div class="navbar-collapse collapse" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="./index.html" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
+                                    <img src="img/brand/dark.svg" alt="Themesberg logo">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                        <a href="news-list.html" class="nav-link"  >
+                            <span class="nav-link-inner-text">News List</span>
+                        </a>
+                        <a href="artikel-list.html" class="nav-link" >
+                            <span class="nav-link-inner-text">Artikel List</span>
+                        </a>
+                        <a href="detail-artikel.html" class="nav-link" >
+                            <span class="nav-link-inner-text">Detail Artikel</span>
+                        </a>
+                        <a href="about.html" class="nav-link" >
+                            <span class="nav-link-inner-text">Tentang</span>
+                        </a>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="sign-in.html" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="fas fa-sign-in-alt mr-2"></i> Login</a>                    
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Title -->
+    <div class="container news-list">
+        <div class="row">
+            <div class="col">
+                <h3>News </h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-gray breadcrumb-transparent">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">News List</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- / title -->
+
+    <!-- News List item-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-primary border-light shadow-soft mb-4">
+                    <div class="card-header p-3">
+                        <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
+                    </div>
+                    <div class="card-body pt-2">
+                        <div class="media d-flex align-items-center justify-content-between">
+                            <div class="post-group">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                    <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                            </div>
+                        </div> 
+                        <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="d-flex justify-content-center">
+            <nav aria-label="Blog page navigation ">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" aria-label="first link" href="#"><span class="fas fa-angle-double-left"></span></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" aria-label="first link" href="#"><span class="fas fa-angle-double-right"></span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end pagination -->
+    </div>
+    
+
+    <!-- <div class="container news-item">
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 col-sm-12">
+                <img class=" rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item list-unstyled"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 ">
+                <img class="img-fluid rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item list-unstyled"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 ">
+                <img class="img-fluid rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm ">
+                    <li class="list-group-item rounded-0"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item rounded-0"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item rounded-0"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+
+        
+    </div> -->
+    <!--/ News List item-->
+
+
+
+
+
+    <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p><strong>ICCO Publikasi</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat corrupti voluptatibus ullam eligendi exercitationem quas voluptas totam eos quidem provident?</p>
+                    <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+                        <li class="mr-2">
+                            <a href="https://twitter.com/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link"
+                            data-toggle="tooltip" data-placement="top" title="Follow  on Twitter">
+                                <span aria-hidden="true" class="fab fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="https://www.facebook.com/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link"
+                            data-toggle="tooltip" data-placement="top" title="Like  on Facebook">
+                                <span aria-hidden="true" class="fab fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="https://github.com/aziz66sundanesse" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
+                            data-toggle="tooltip" data-placement="top" title="Open source projects">
+                                <span aria-hidden="true" class="fab fa-github"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+                    <h5>ICCO</h5>
+                    <ul class="footer-links list-unstyled mt-2">
+                        <li class="mb-1"><a class="p-2" target="_blank" href="">Blog</a></li>
+                        <li class="mb-1"><a class="p-2" target="_blank" href="">Products</a></li>
+                        <li class="mb-1"><a class="p-2" target="_blank" href="">About Us</a></li>
+                        <li><a class="p-2" target="_blank" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+                    <h5>Other</h5>
+                    <ul class="footer-links list-unstyled mt-2">
+                        <li class="mb-1"><a class="p-2" href="" target="_blank">Docs
+                            <span class="badge badge-gray text-uppercase ml-2">v1.0</span></a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="p-2" href="" target="_blank">Changelog</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="p-2" target="_blank" href=">License</a>
+                        </li>
+                        <li>
+                            <a class="p-2" target="_blank" href="">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                    <h5>Subscribe</h5>
+                    <p class="text-gray font-small mt-2">Join our mailing list. We write rarely, but only the best content.</p>
+                    <form action="#">
+                        <div class="form-row mb-2">
+                            <div class="col-12">
+                                <label class="h6 font-weight-normal d-none" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control mb-2" placeholder="example@company.com" name="email" aria-label="Subscribe form" id="exampleInputEmail3" required>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-block" data-loading-text="Sending">
+                                    <span>Subscribe</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-gray font-small m-0">We’ll never share your details. See our <a class="text-black" href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col">
+                    <a href="https://themesberg.com" target="_blank" class="d-flex justify-content-center">
+                        <img src="img/themesberg.svg" height="25" class="mb-3" alt="Themesberg Logo">
+                    </a>
+                <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+                    <p class="font-weight-normal font-small mb-0">Copyright ©
+                        <span class="current-year">2020</span>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+    <!-- Core -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/headroom.js/dist/headroom.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/prismjs/prism.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Neumorphism JS -->
+    <script src="js/neumorphism.js"></script>
+  </body>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="    crossorigin=""></script>
+
+  <script src="js/leaflet.ajax.js"></script>
+
+
+</html>

@@ -1,0 +1,7 @@
+.news-list{
+    margin-top: 100px;
+}
+
+.news-item .list-group .list-group-item{
+    border: none !important;
+}

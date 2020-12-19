@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/neumorphism.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/news-list.css">
     <!-- Fontawesome -->
     <link type="text/css" href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="   crossorigin=""/>
     <!-- leaflet css -->
    
-    <title>Hello, world!</title>
+    <title>News List</title>
 
   </head>
   <body>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                        <a href="news-list.html" class="nav-link"  >
+                        <a href="news-list.html" class="nav-link" >
                             <span class="nav-link-inner-text">News List</span>
                         </a>
                         <a href="artikel-list.html" class="nav-link" >
@@ -66,32 +66,73 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <!-- Title -->
+    <div class="container news-list">
         <div class="row">
-            <div class="position-absolute overflow-hidden text-left bg-light headline mb-5 mt-3">
-                <div class="col-md-5 ">
-                  <h1 class="display-4 fw-normal ">ICCO Publikasi</h1>         
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laborum, tenetur id cum reprehenderit provident possimus molestias omnis soluta ullam.</p>
-                  <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-                </div>
-              </div>
+            <div class="col">
+                <h3>Detail Artikel </h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-gray breadcrumb-transparent">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Artikel</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Detail Artikel</li>
+                    </ol>
+                </nav>
+            </div>
+            <hr>
         </div>
     </div>
-    <div id="mapid"></div>
+    <!-- / title -->
+
+    <!-- News List item-->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="col-md-8  ">
+                <div class="detail-artikel shadow-soft  rounded p-3 pb-4">
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, architecto.</h2>
+                    <div class="media d-flex align-items-center mb-3 ">
+                        <div class="post-group pr-3">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                                <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
+                        </div>
+                    </div> 
+                    <img class="img-fluid rounded mb-3" src="img/blog/blog-article-1.jpg" alt="" srcset="">
+                    <p>Lorem ipsum dolor sit dicta ducimus laborum labore, assumenda dolores sunt. Dolor voluptatum, quis reprehenderit ut veniam, soluta, esse facilis vero corrupti provident at! Rerum fuga, deleniti cupiditate pariatur quidem eveniet asperiores autem, rem quasi at id nisi. Nostrum recusandae dolores, sequi temporibus atque laborum magnam iure culpa libero. Quisquam quibusdam itaque dolorem totam quas sed, ipsam voluptatibus tempora libero repellendus error nobis. Veniam facilis ab officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut minus aliquid ex velit quidem, cumque magni! Deserunt recusandae, quasi voluptates enim sint ipsum ea natus dolorem odit, quas maxime minus quod ab saepe inventore culpa odio quidem, maiores quia. Ipsam consequuntur similique maiores odit quam iusto corporis quae delectus, accusamus nemo doloremque magni, dolore, vel harum incidunt! Incidunt est voluptatem qui accusamus voluptatum, expedita, cumque necessitatibus, aut at beatae delectus magni! Inventore, sed corrupti. Veritatis cum ex aperiam atque veniam quasi officiis. Esse distinctio laboriosam voluptates facere itaque? Molestiae, culpa eius quae provident labore ab dicta exercitationem praesentium iure!</p>
+                    <!-- share -->
+                    <button class="btn btn-icon-only btn-pill btn-facebook mr-3" type="button" aria-label="facebook button" title="facebook button">
+                        <span aria-hidden="true" class="fab fa-facebook"></span>
+                    </button>
+                    <button class="btn btn-icon-only btn-pill btn-twitter mr-3" type="button" aria-label="twitter button" title="twitter button">
+                        <span aria-hidden="true" class="fab fa-twitter"></span>
+                    </button>
+                    <button class="btn btn-icon-only btn-pill btn-instagram mr-3" type="button" aria-label="instagram button" title="instagram button">
+                        <span aria-hidden="true" class="fab fa-instagram"></span>
+                    </button>
+                    <!-- end share -->
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card bg-primary shadow-soft text-center border-light mb-4">
                     <div class="card-header">
                         <span class="card-text small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
                     </div>
                     <div class="card-body">
                       <h3 class="h5 card-title">We partnered up with Google</h3>
-                      <p class="card-text"> With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                       <a href="#" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
+                    <div class="card-footer">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Moore avatar"> Jo J. Moore
+                        </a>
+                    </div>
                   </div>
-                  <div class="card bg-primary shadow-soft text-center border-light mb-4">
+                <div class="card bg-primary shadow-soft text-center border-light mb-4">
                     <div class="card-header">
                         <span class="card-text small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
                     </div>
@@ -100,8 +141,13 @@
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                       <a href="#" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
+                    <div class="card-footer">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Moore avatar"> Jo J. Moore
+                        </a>
+                    </div>
                   </div>
-                  <div class="card bg-primary shadow-soft text-center border-light mb-4">
+                <div class="card bg-primary shadow-soft text-center border-light mb-4">
                     <div class="card-header">
                         <span class="card-text small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
                     </div>
@@ -110,114 +156,69 @@
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                       <a href="#" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
-                  </div>
-                  <div class="card bg-primary shadow-soft text-center border-light mb-4">
-                    <div class="card-header">
-                        <span class="card-text small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                    </div>
-                    <div class="card-body">
-                      <h3 class="h5 card-title">We partnered up with Google</h3>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                    <div class="card-footer">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Moore avatar"> Jo J. Moore
+                        </a>
                     </div>
                   </div>
             </div>
-
-            <div class="col-lg-8 artikel">
-                <div class="row row-cols-1 row-cols-lg-2 g-4">
-                    <div class="col-lg-6">
-                        <div class="card bg-primary border-light shadow-soft mb-4">
-                            <div class="card-header p-3">
-                                <img src="img/blog/blog-article-1.jpg" class="card-img-top rounded" alt="Designer desk">
-                            </div>
-                            <div class="card-body pt-2">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div> 
-                                <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorum ducimus alias nemo adipisci consequatur ipsam accusamus culpa eaque laborum? Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card bg-primary border-light shadow-soft mb-4">
-                            <div class="card-header p-3">
-                                <img src="img/blog/blog-article-2.jpg" class="card-img-top rounded" alt="Designer desk">
-                            </div>
-                            <div class="card-body pt-2">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div> 
-                                <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card bg-primary border-light shadow-soft mb-4">
-                            <div class="card-header p-3">
-                                <img src="img/blog/blog-article-1.jpg" class="card-img-top rounded" alt="Designer desk">
-                            </div>
-                            <div class="card-body pt-2">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div> 
-                                <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card bg-primary border-light shadow-soft mb-4">
-                            <div class="card-header p-3">
-                                <img src="img/blog/blog-article-3.jpg" class="card-img-top rounded" alt="Designer desk">
-                            </div>
-                            <div class="card-body pt-2">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar-sm mr-2 img-fluid rounded-circle" src="img/team/profile-picture-2.jpg" alt="Jo portrait"> Jo J. Moore
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div> 
-                                <h3 class="h5 card-title mt-4">We partnered up with Google</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-            </div>
-            
         </div>
+
     </div>
+    
+
+    <!-- <div class="container news-item">
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 col-sm-12">
+                <img class=" rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item list-unstyled"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 ">
+                <img class="img-fluid rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item list-unstyled"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+        <div class="row shadow-soft mb-4 rounded p-3">
+            <div class="col-4 px-0 ">
+                <img class="img-fluid rounded" src="img/blog/blog-article-1.jpg" alt="" srcset="" >
+            </div>
+            <div class="col-8 pl-5">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <ul class="list-group list-group-horizontal-sm ">
+                    <li class="list-group-item rounded-0"><i class="fas fa-user-alt"></i> Cras justo odio</li>
+                    <li class="list-group-item rounded-0"><i class="fa fa-tag"></i> Dapibus ac facilisis in</li>
+                    <li class="list-group-item rounded-0"><i class="far fa-calendar-alt"></i>15 12 2020</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore eveniet, aperiam facilis eos cupiditate soluta eaque provident doloremque eligendi architecto explicabo praesentium doloribus nobis culpa cum excepturi omnis autem esse numquam. Eaque unde quisquam, sed eligendi laborum quo! Repellat, a facere! Ipsam exercitationem consequuntur, rerum suscipit magnam animi totam.</p>
+            </div>
+        </div>
+
+        
+    </div> -->
+    <!--/ News List item-->
+
+
+
+
 
     <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
         <div class="container">
@@ -344,39 +345,5 @@
 
   <script src="js/leaflet.ajax.js"></script>
 
-  <script>
-      
-
-    var mymap = L.map('mapid', { zoomControl: false }).setView([-5.190306, 117.911706], 5);
-
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: '',
-        maxZoom: 18,
-
-        // mapbox/streets-v11
-        id: '', 
-        tileSize: 512,
-        zoomOffset: -1,
-        scrollWheelZoom: false,
-        accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
-    }).addTo(mymap);
-
-    function popUp(f,l){
-        var out = [];
-        if (f.properties){
-            for(key in f.properties){
-                out.push(key+": "+f.properties[key]);
-            }
-            l.bindPopup(out.join("<br />"));
-        }
-    }
-    // var jsonTest = new L.GeoJSON.AJAX(["geojson/aceh.geojson","geojson/sumatra_utara.geojson"],{onEachFeature:popUp}).addTo(mymap);
-    var jsonTest = new L.GeoJSON.AJAX(["geojson/indonesia-prov.geojson"],{onEachFeature:popUp}).addTo(mymap);
-    // var jsonTest = new L.GeoJSON.AJAX(["geojson/list_location_id_json.json"],{onEachFeature:popUp}).addTo(mymap);
-    mymap.scrollWheelZoom.disable();
-
-
-    // L.geoJSON(geojsonFeature).addTo(mymap);
-</script>
 
 </html>
